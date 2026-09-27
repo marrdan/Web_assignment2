@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #3b5fc4;
+  --color-primary-dark: #2c48a0;
+  --color-dark: #1f2430;
+  --color-muted: #6b7280;
+  --color-border: #e2e5eb;
+  --color-bg: #f7f8fa;
+  --radius: 10px;
+  --gap-sm: 0.5rem;
+  --gap-md: 1rem;
+  --gap-lg: 2rem;
+  --font: system-ui, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--color-bg);
+  color: var(--color-dark);
+  padding: var(--gap-lg) 1rem;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: var(--gap-lg);
+}
+
+.block {
+  max-width: 1000px;
+  margin: 0 auto var(--gap-lg);
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--gap-lg);
+}
+
+.block-title {
+  font-size: 1rem;
+  color: var(--color-muted);
+  margin-bottom: var(--gap-md);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.btn {
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.55em 1.2em;
+  font: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-primary { background: var(--color-primary); color: #fff; }
+.btn-primary:hover { background: var(--color-primary-dark); }
+.btn-ghost { background: transparent; border: 1px solid var(--color-border); color: var(--color-dark); }
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--gap-md);
+}
+.logo { font-weight: 700; font-size: 1.2rem; }
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-md);
+  list-style: none;
+  flex: 1 1 auto;
+}
+.nav-links a { text-decoration: none; color: var(--color-dark); }
+.nav-actions {
+  display: flex;
+  gap: var(--gap-sm);
+  margin-left: auto; 
+}
+
+
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-md);
+  align-items: stretch;
+}
+.card {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--gap-md);
+}
+.card p { color: var(--color-muted); flex: 1; }
+.card .btn { align-self: flex-start; }
+
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--gap-md);
+  position: relative;
+}
+.page-numbers {
+  display: flex;
+  gap: var(--gap-sm);
+  list-style: none;
+}
+.page-numbers a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2em;
+  padding: 0.3em;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--color-dark);
+}
+.page-numbers a.active { background: var(--color-primary); color: #fff; }
+.page-arrow {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.3em 0.7em;
+  cursor: pointer;
+}
+.page-count {
+  color: var(--color-muted);
+  margin-left: auto; /* pinned to the right edge; wraps below on narrow screens */
+}
+
+/* 4. Comment block --------------------------------------------------- */
+.comment {
+  display: flex;
+  gap: var(--gap-md);
+  align-items: flex-start;
+}
+.avatar {
+  flex: 0 0 auto;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.comment-body { flex: 1 1 0; min-width: 0; }
+.comment-author { font-weight: 700; margin-bottom: 0.2em; }
+.comment-text { color: var(--color-muted); }
+
+
+
+
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-md);
+  align-items: stretch;
+}
+.plan {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--gap-lg) var(--gap-md);
+  text-align: center;
+}
+.plan-featured {
+  border-color: var(--color-primary);
+  padding-top: calc(var(--gap-lg) * 1.6); 
+  padding-bottom: calc(var(--gap-lg) * 1.6);
+}
+.badge {
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.price { font-size: 1.6rem; font-weight: 700; }
+.price span { font-size: 0.9rem; color: var(--color-muted); font-weight: 400; }
+.plan ul { list-style: none; color: var(--color-muted); flex: 1; display: flex; flex-direction: column; gap: 0.3em; }
+.plan .btn { align-self: center; }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Task 3 — Three Layouts, One Markup</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="page-title">Task 3. Three Layouts, One Markup</h1>
+
+  
+
+  <h2 class="mode-title">Mode 1 — Grid of cards <small>(CSS Grid decides the columns)</small></h2>
+  <ul class="items mode-grid">
+    <li class="item"><img src="https://i.pinimg.com/originals/76/71/57/76715783732033280d5eff12cbd085e6.jpg?nii=t" href = "" alt=""><div class="item-body"><h3>Morning Light</h3><p class="date">Mar 3</p><p class="desc">A short note about the sunrise over the hills.</p></div></li>
+    <li class="item"><img src="https://i.pinimg.com/originals/64/02/48/6402480c04b0140b5e42a2254007b16e.jpg?nii=t" alt=""><div class="item-body"><h3>City Notes</h3><p class="date">Mar 4</p><p class="desc">Field notes from a walk downtown, longer than the first one so the layout is properly tested against uneven content.</p></div></li>
+    <li class="item"><img src="https://i.pinimg.com/originals/34/88/e5/3488e5156890ff9bc41d45ffbe11ad2c.jpg?nii=t" alt=""><div class="item-body"><h3>Quiet Harbor</h3><p class="date">Mar 5</p><p class="desc">Boats at rest.</p></div></li>
+    <li class="item"><img src="https://i.pinimg.com/474x/92/36/1b/92361b75d2169275942f9f05fc6051a0.jpg" alt=""><div class="item-body"><h3>Mountain Trail</h3><p class="date">Mar 6</p><p class="desc">Notes from a weekend hike, including a short detour that turned out longer than planned.</p></div></li>
+    <li class="item"><img src="https://avatars.mds.yandex.net/i?id=611b2aa7b95accf88e1ca0ab92f201803e64e7a4-5026203-images-thumbs&n=13" alt=""><div class="item-body"><h3>Desert Road</h3><p class="date">Mar 7</p><p class="desc">A long drive, not much traffic.</p></div></li>
+    <li class="item"><img src="https://i.pinimg.com/736x/69/3b/fb/693bfbf02b2043affb3a8b1f0363d723.jpg" alt=""><div class="item-body"><h3>Rainy Window</h3><p class="date">Mar 8</p><p class="desc">Short entry.</p></div></li>
+    <li class="item"><img src="https://img.magnific.com/premium-photo/large-library-filled-with-old-books-there-is-wooden-ladder-leading-up-second-floor-fireplace-corner_36682-191455.jpg?semt=ais_hybrid&w=740&q=80" alt=""><div class="item-body"><h3>Old Library</h3><p class="date">Mar 9</p><p class="desc">Dust, quiet, and the smell of old paper — a longer piece about an afternoon spent reading.</p></div></li>
+    <li class="item"><img src="https://live.staticflickr.com/8179/7931025120_1e7698c3da_b.jpg" alt=""><div class="item-body"><h3>Night Market</h3><p class="date">Mar 10</p><p class="desc">Lanterns and noise.</p></div></li>
+    <li class="item"><img src="https://live.staticflickr.com/8371/8374810769_3eeacd0b30_b.jpg" alt=""><div class="item-body"><h3>Snow Fields</h3><p class="date">Mar 11</p><p class="desc">White for miles.</p></div></li>
+    <li class="item"><img src="https://avatars.mds.yandex.net/i?id=e87ff09228eab59b0b7739f9264902258008cf77-6311157-images-thumbs&n=13" alt=""><div class="item-body"><h3>River Bend</h3><p class="date">Mar 12</p><p class="desc">A slow afternoon by the water, watching the current turn around the bend.</p></div></li>
+    <li class="item"><img src="https://i.pinimg.com/originals/78/45/ce/7845cebe96a96561c1190a229e974702.jpg" alt=""><div class="item-body"><h3>Open Field</h3><p class="date">Mar 13</p><p class="desc">Wind and grass.</p></div></li>
+    <li class="item"><img src="https://avatars.mds.yandex.net/i?id=b998b860f092d80abce7a3160f38e749adb9a70e-11922523-images-thumbs&n=13" alt=""><div class="item-body"><h3>Late Train</h3><p class="date">Mar 14</p><p class="desc">Last stop of the night.</p></div></li>
+  </ul>
+
+  <h2 class="mode-title">Mode 2 — Compact list <small>(picture left, date right)</small></h2>
+  <ul class="items mode-list">
+    <li class="item"><img src="https://i.pinimg.com/originals/76/71/57/76715783732033280d5eff12cbd085e6.jpg?nii=t" alt=""><div class="item-body"><h3>Morning Light</h3><p class="date">Mar 3</p><p class="desc">A short note about the sunrise over the hills.</p></div></li>
+    <li class="item"><img src="https://i.pinimg.com/originals/64/02/48/6402480c04b0140b5e42a2254007b16e.jpg?nii=t" alt=""><div class="item-body"><h3>City Notes</h3><p class="date">Mar 4</p><p class="desc">Field notes from a walk downtown, longer than the first one so the layout is properly tested against uneven content.</p></div></li>
+    <li class="item"><img src="https://i.pinimg.com/originals/34/88/e5/3488e5156890ff9bc41d45ffbe11ad2c.jpg?nii=t" alt=""><div class="item-body"><h3>Quiet Harbor</h3><p class="date">Mar 5</p><p class="desc">Boats at rest.</p></div></li>
+    <li class="item"><img src="https://i.pinimg.com/474x/92/36/1b/92361b75d2169275942f9f05fc6051a0.jpg" alt=""><div class="item-body"><h3>Mountain Trail</h3><p class="date">Mar 6</p><p class="desc">Notes from a weekend hike, including a short detour that turned out longer than planned.</p></div></li>
+    <li class="item"><img src="https://avatars.mds.yandex.net/i?id=611b2aa7b95accf88e1ca0ab92f201803e64e7a4-5026203-images-thumbs&n=13" alt=""><div class="item-body"><h3>Desert Road</h3><p class="date">Mar 7</p><p class="desc">A long drive, not much traffic.</p></div></li>
+    <li class="item"><img src="https://i.pinimg.com/736x/69/3b/fb/693bfbf02b2043affb3a8b1f0363d723.jpg" alt=""><div class="item-body"><h3>Rainy Window</h3><p class="date">Mar 8</p><p class="desc">Short entry.</p></div></li>
+    <li class="item"><img src="https://img.magnific.com/premium-photo/large-library-filled-with-old-books-there-is-wooden-ladder-leading-up-second-floor-fireplace-corner_36682-191455.jpg?semt=ais_hybrid&w=740&q=80" alt=""><div class="item-body"><h3>Old Library</h3><p class="date">Mar 9</p><p class="desc">Dust, quiet, and the smell of old paper — a longer piece about an afternoon spent reading.</p></div></li>
+    <li class="item"><img src="https://live.staticflickr.com/8179/7931025120_1e7698c3da_b.jpg" alt=""><div class="item-body"><h3>Night Market</h3><p class="date">Mar 10</p><p class="desc">Lanterns and noise.</p></div></li>
+    <li class="item"><img src="https://live.staticflickr.com/8371/8374810769_3eeacd0b30_b.jpg" alt=""><div class="item-body"><h3>Snow Fields</h3><p class="date">Mar 11</p><p class="desc">White for miles.</p></div></li>
+    <li class="item"><img src="https://avatars.mds.yandex.net/i?id=e87ff09228eab59b0b7739f9264902258008cf77-6311157-images-thumbs&n=13" alt=""><div class="item-body"><h3>River Bend</h3><p class="date">Mar 12</p><p class="desc">A slow afternoon by the water, watching the current turn around the bend.</p></div></li>
+    <li class="item"><img src="https://i.pinimg.com/originals/78/45/ce/7845cebe96a96561c1190a229e974702.jpg" alt=""><div class="item-body"><h3>Open Field</h3><p class="date">Mar 13</p><p class="desc">Wind and grass.</p></div></li>
+    <li class="item"><img src="https://avatars.mds.yandex.net/i?id=b998b860f092d80abce7a3160f38e749adb9a70e-11922523-images-thumbs&n=13" alt=""><div class="item-body"><h3>Late Train</h3><p class="date">Mar 14</p><p class="desc">Last stop of the night.</p></div></li>
+  </ul>
+
+  <h2 class="mode-title">Mode 3 — Magazine front page <small>(one lead item spans several cells)</small></h2>
+  <ul class="items mode-magazine">
+    <li class="item"><img src="https://picsum.photos/seed/1/300/200" alt=""><div class="item-body"><h3>Morning Light</h3><p class="date">Mar 3</p><p class="desc">A short note about the sunrise over the hills.</p></div></li>
+    <li class="item"><img src="https://picsum.photos/seed/2/300/200" alt=""><div class="item-body"><h3>City Notes</h3><p class="date">Mar 4</p><p class="desc">Field notes from a walk downtown, longer than the first one so the layout is properly tested against uneven content.</p></div></li>
+    <li class="item"><img src="https://picsum.photos/seed/3/300/200" alt=""><div class="item-body"><h3>Quiet Harbor</h3><p class="date">Mar 5</p><p class="desc">Boats at rest.</p></div></li>
+    <li class="item"><img src="https://picsum.photos/seed/4/300/200" alt=""><div class="item-body"><h3>Mountain Trail</h3><p class="date">Mar 6</p><p class="desc">Notes from a weekend hike, including a short detour that turned out longer than planned.</p></div></li>
+    <li class="item"><img src="https://picsum.photos/seed/5/300/200" alt=""><div class="item-body"><h3>Desert Road</h3><p class="date">Mar 7</p><p class="desc">A long drive, not much traffic.</p></div></li>
+    <li class="item"><img src="https://picsum.photos/seed/6/300/200" alt=""><div class="item-body"><h3>Rainy Window</h3><p class="date">Mar 8</p><p class="desc">Short entry.</p></div></li>
+    <li class="item"><img src="https://picsum.photos/seed/7/300/200" alt=""><div class="item-body"><h3>Old Library</h3><p class="date">Mar 9</p><p class="desc">Dust, quiet, and the smell of old paper — a longer piece about an afternoon spent reading.</p></div></li>
+    <li class="item"><img src="https://picsum.photos/seed/8/300/200" alt=""><div class="item-body"><h3>Night Market</h3><p class="date">Mar 10</p><p class="desc">Lanterns and noise.</p></div></li>
+    <li class="item"><img src="https://picsum.photos/seed/9/300/200" alt=""><div class="item-body"><h3>Snow Fields</h3><p class="date">Mar 11</p><p class="desc">White for miles.</p></div></li>
+    <li class="item"><img src="https://picsum.photos/seed/10/300/200" alt=""><div class="item-body"><h3>River Bend</h3><p class="date">Mar 12</p><p class="desc">A slow afternoon by the water, watching the current turn around the bend.</p></div></li>
+    <li class="item"><img src="https://picsum.photos/seed/11/300/200" alt=""><div class="item-body"><h3>Open Field</h3><p class="date">Mar 13</p><p class="desc">Wind and grass.</p></div></li>
+    <li class="item"><img src="https://picsum.photos/seed/12/300/200" alt=""><div class="item-body"><h3>Late Train</h3><p class="date">Mar 14</p><p class="desc">Last stop of the night.</p></div></li>
+  </ul>
+
+</body>
+</html>

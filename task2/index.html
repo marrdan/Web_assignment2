@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Task 2 — Component Library (Flexbox)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="page-title">Task 2. Component Library (Flexbox)</h1>
+
+  <!-- 1. Navigation bar -->
+  <section class="block">
+    <h2 class="block-title">1. Navigation bar</h2>
+    <nav class="navbar">
+      <div class="logo">Brand</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn btn-ghost">Sign in</button>
+        <button class="btn btn-primary">Sign up</button>
+      </div>
+    </nav>
+  </section>
+
+  <!-- 2. Card row -->
+  <section class="block">
+    <h2 class="block-title">2. Card row</h2>
+    <div class="card-row">
+      <article class="card">
+        <h3>Short card</h3>
+        <p>A short description.</p>
+        <button class="btn btn-primary">Learn more</button>
+      </article>
+      <article class="card">
+        <h3>Medium card</h3>
+        <p>A description that runs a bit longer than the first one, just to check the layout.</p>
+        <button class="btn btn-primary">Learn more</button>
+      </article>
+      <article class="card">
+        <h3>Long card</h3>
+        <p>This card has a much longer description on purpose, so that the cards need to stretch to the same
+          height no matter how much text is inside each of them, while the button still stays on one line at
+          the bottom of the card.</p>
+        <button class="btn btn-primary">Learn more</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- 3. Pagination -->
+  <section class="block">
+    <h2 class="block-title">3. Pagination bar</h2>
+    <div class="pagination">
+      <button class="page-arrow">&larr;</button>
+      <ul class="page-numbers">
+        <li><a href="#">1</a></li>
+        <li><a href="#" class="active">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+      </ul>
+      <button class="page-arrow">&rarr;</button>
+      <span class="page-count">124 results</span>
+    </div>
+  </section>
+
+  <!-- 4. Comment block -->
+  <section class="block">
+    <h2 class="block-title">4. Comment block</h2>
+    <div class="comment">
+      <div class="avatar">AK</div>
+      <div class="comment-body">
+        <p class="comment-author">Anna K.</p>
+        <p class="comment-text">This is a comment with enough text to wrap onto several lines, so we can
+          check that the text always wraps beside the avatar and never slides underneath it, no matter how
+          narrow the window becomes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Pricing table -->
+  <section class="block">
+    <h2 class="block-title">5. Pricing table</h2>
+    <div class="pricing">
+      <div class="plan">
+        <h3>Basic</h3>
+        <p class="price">$9<span>/mo</span></p>
+        <ul>
+          <li>1 project</li>
+          <li>Email support</li>
+        </ul>
+        <button class="btn btn-ghost">Choose plan</button>
+      </div>
+      <div class="plan plan-featured">
+        <p class="badge">Most popular</p>
+        <h3>Pro</h3>
+        <p class="price">$29<span>/mo</span></p>
+        <ul>
+          <li>Unlimited projects</li>
+          <li>Priority support</li>
+          <li>Team collaboration</li>
+          <li>Advanced analytics</li>
+        </ul>
+        <button class="btn btn-primary">Choose plan</button>
+      </div>
+      <div class="plan">
+        <h3>Enterprise</h3>
+        <p class="price">$79<span>/mo</span></p>
+        <ul>
+          <li>Everything in Pro</li>
+          <li>Dedicated manager</li>
+        </ul>
+        <button class="btn btn-ghost">Choose plan</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
