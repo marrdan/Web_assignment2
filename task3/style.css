@@ -28,8 +28,7 @@ body {
 .item .date { color: #6b7280; font-size: 0.85rem; }
 .item .desc { color: #4b5563; font-size: 0.9rem; margin-top: 0.4em; }
 
-/* ---------- Mode 1: grid of cards ---------- */
-/* CSS Grid decides how many columns fit the window; Flexbox stacks each card's own content. */
+
 .mode-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -39,8 +38,7 @@ body {
 .mode-grid .item-body { display: flex; flex-direction: column; flex: 1; }
 .mode-grid .desc { flex: 1; }
 
-/* ---------- Mode 2: compact list ---------- */
-/* Flexbox arranges each row: picture, then title/text, then the date pinned to the right. */
+
 .mode-list {
   display: flex;
   flex-direction: column;
@@ -71,9 +69,7 @@ body {
 .mode-list .desc { flex: 2 1 260px; order: 3; margin-top: 0; }
 .mode-list .date { margin-left: auto; white-space: nowrap; order: 2; }
 
-/* ---------- Mode 3: magazine front page ---------- */
-/* CSS Grid lays the page out and lets the lead item span extra cells;
-   grid-auto-rows uses a fluid value so nothing is a fixed pixel height. */
+
 .mode-magazine {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
